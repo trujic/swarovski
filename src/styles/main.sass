@@ -69,8 +69,7 @@ header
 .cta-buttons
   margin-top: 35px
   button
-    width: 240px
-    padding: 10px
+    @include button
     &:first-child
       background-color: white
       color: black
@@ -86,6 +85,9 @@ header
       color: white
       margin-left: 10px
 
+.fixed-nav
+  position: sticky
+
 main
   width: 100%
   background-color: beige
@@ -94,8 +96,71 @@ main
     padding: 45px 0
     font-size: 47px
     font-weight: lighter
+  .hero
+    padding-bottom: 1px
   .main-section
-    width: 70%
+    position: relative
+    width: 76%
     margin: auto
     background-color: white
-    
+    margin-bottom: 100px
+    img
+      display: block
+    .main-section-text
+      width: 540px
+      height: 550px
+      position: absolute
+      padding: 100px 40px
+      background-color: white
+      p
+        margin-bottom: 50px
+      button
+        @include button
+        background-color: black
+        color: white
+        font-size: 20px
+        border: 1px solid black
+        &:hover
+          cursor: pointer
+          background-color: darkgray
+          border: none
+
+footer
+  @include flex
+  align-items: baseline
+  width: 60%
+  margin: auto
+  height: 300px
+  margin-top: 80px
+  h3
+    margin-bottom: 20px
+  ul
+    list-style: none
+    li
+      margin: 10px 0
+    a
+      color: gray
+      font-weight: lighter
+      text-decoration: none
+
+.copyright-container
+  width: 100%
+  border-top: 0.6px solid lightgray
+  .copyright
+    width: 70%
+    margin: auto
+    padding: 30px 0
+    @include flex
+    .copyright-text
+      width: 350px
+      font-size: 15px
+      font-weight: lighter
+      color: gray
+    .social
+      @include flex
+      width: 350px
+      color: gray
+      margin-right: 30px
+      a
+        &:hover
+          cursor: pointer

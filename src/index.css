@@ -94,7 +94,7 @@ header .nav-wraper:hover {
   margin-top: 35px;
 }
 .cta-buttons button {
-  width: 240px;
+  width: 260px;
   padding: 10px;
 }
 .cta-buttons button:first-child {
@@ -114,6 +114,10 @@ header .nav-wraper:hover {
   margin-left: 10px;
 }
 
+.fixed-nav {
+  position: sticky;
+}
+
 main {
   width: 100%;
   background-color: beige;
@@ -124,10 +128,96 @@ main h2 {
   font-size: 47px;
   font-weight: lighter;
 }
+main .hero {
+  padding-bottom: 1px;
+}
 main .main-section {
-  width: 70%;
+  position: relative;
+  width: 76%;
   margin: auto;
   background-color: white;
+  margin-bottom: 100px;
+}
+main .main-section img {
+  display: block;
+}
+main .main-section .main-section-text {
+  width: 540px;
+  height: 550px;
+  position: absolute;
+  padding: 100px 40px;
+  background-color: white;
+}
+main .main-section .main-section-text p {
+  margin-bottom: 50px;
+}
+main .main-section .main-section-text button {
+  width: 260px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border: 1px solid black;
+}
+main .main-section .main-section-text button:hover {
+  cursor: pointer;
+  background-color: darkgray;
+  border: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: baseline;
+  width: 60%;
+  margin: auto;
+  height: 300px;
+  margin-top: 80px;
+}
+footer h3 {
+  margin-bottom: 20px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin: 10px 0;
+}
+footer ul a {
+  color: gray;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.copyright-container {
+  width: 100%;
+  border-top: 0.6px solid lightgray;
+}
+.copyright-container .copyright {
+  width: 70%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright-container .copyright .copyright-text {
+  width: 350px;
+  font-size: 15px;
+  font-weight: lighter;
+  color: gray;
+}
+.copyright-container .copyright .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  color: gray;
+  margin-right: 30px;
+}
+.copyright-container .copyright .social a:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
