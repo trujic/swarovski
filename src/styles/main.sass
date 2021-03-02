@@ -1,0 +1,101 @@
+@import "variables.sass"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+header
+  height: 90vh
+  background-image: url('./assets/hero-bg.png')
+  .nav-wraper
+    height: 350px
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 5))
+    color: white
+    &:hover
+      background-image: none
+      background-color: beige
+      color: black
+
+.top-nav
+  @include flex
+  width: 100%
+  padding: 10px 20px 40px 20px
+  .top-nav-left
+    @include flex
+    a
+      padding: 0 10px
+  .top-nav-right
+    @include flex
+    a
+      padding: 0 10px
+
+.title
+  width: 90%
+  height: 20rem
+  margin: auto
+  font-size: 150px
+  position: absolute
+  top: 0
+  left: 4%
+  h1
+    font-weight: lighter
+    letter-spacing: -1px
+    &:hover
+      cursor: pointer
+
+.main-nav
+  width: 450px
+  ul
+    @include flex
+    list-style: none
+    position: absolute
+    top: 310px
+    left: 32.5%
+    li
+      margin: 0 30px
+
+.gift
+  position: absolute
+  top: 56vh
+  left: 4%
+  width: 45vw
+  color: white
+  h2
+    font-size: 60px
+  h3
+    font-size: 24px
+
+.cta-buttons
+  margin-top: 35px
+  button
+    width: 240px
+    padding: 10px
+    &:first-child
+      background-color: white
+      color: black
+      border: none
+      font-size: 16px
+      font-weight: bold
+      border: 1px solid white
+    &:last-child
+      font-size: 16px
+      font-weight: bold
+      border: 1px solid white
+      background-color: rgba(255, 255, 255, 0)
+      color: white
+      margin-left: 10px
+
+main
+  width: 100%
+  background-color: beige
+  text-align: center
+  h2
+    padding: 45px 0
+    font-size: 47px
+    font-weight: lighter
+  .main-section
+    width: 70%
+    margin: auto
+    background-color: white
+    
